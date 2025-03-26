@@ -58,6 +58,6 @@ A **fully responsive webpage layout** built using a combination of **CSS Grid an
 
 ### 📱 Mobile Preview
 ![Mobile Preview - 1](assets/mobile.png)
-![Mobile Preview - 2](assets/mobile.png)
+![Mobile Preview - 2](assets/mobile1.png)
 
 

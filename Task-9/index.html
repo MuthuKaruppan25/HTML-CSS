@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topnav">
+      <h1>Sample</h1>
+      <button class="menu-toggle" onclick="toggleSidebar()">☰</button>
+    </header>
+    <div class="container">
+      <aside class="sidebar">
+        <div class="sidebar-items">
+          <button class="btn active"><i class="fas fa-home"></i> Home</button>
+          <button class="btn"><i class="fas fa-user"></i> Profile</button>
+          <button class="btn"><i class="fas fa-cog"></i> Settings</button>
+          <button class="btn"><i class="fas fa-envelope"></i> Messages</button>
+          <button class="btn">
+            <i class="fas fa-sign-out-alt"></i> Logout
+          </button>
+        </div>
+      </aside>
+      <div class="content">
+        <div class="card">
+          <div class="overlapping"></div>
+          <div class="card-content">
+            <h3>Design Webpage</h3>
+            <p>
+              This is the sample i built using html and css and i have done so
+              many webpages using react,next etc.
+            </p>
+            <a href="#">MORE</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="overlapping"></div>
+          <div class="card-content">
+            <h3>Design Webpage</h3>
+            <p>
+              This is the sample i built using html and css and i have done so
+              many webpages using react,next etc.
+            </p>
+            <a href="#">MORE</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="overlapping"></div>
+          <div class="card-content">
+            <h3>Design Webpage</h3>
+            <p>
+              This is the sample i built using html and css and i have done so
+              many webpages using react,next etc.
+            </p>
+            <a href="#">MORE</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="overlapping"></div>
+          <div class="card-content">
+            <h3>Design Webpage</h3>
+            <p>
+              This is the sample i built using html and css and i have done so
+              many webpages using react,next etc.
+            </p>
+            <a href="#">MORE</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function toggleSidebar() {
+        let sidebar = document.querySelector("aside.sidebar");
+        sidebar.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

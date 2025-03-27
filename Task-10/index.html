@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+    <header class="topnav">
+        <h1>Sample</h1>
+        <nav>
+            <ul class="navbar">
+                <li><a href="#home" class="active">home</a></li>
+                <li><a href="#about" >About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle">☰</button>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="home" class="page">
+            <h1>Home</h1>
+            <p>Welcome to our website!</p>
+        </section>
+        
+        <section id="about" class="page">
+            <h1>About</h1>
+            <p>Learn more about us here.</p>
+        </section>
+        
+        <section id="services" class="page">
+            <h1>Services</h1>
+            <p>Check out our amazing services.</p>
+        </section>
+        
+        <section id="contact" class="page">
+            <h1>Contact</h1>
+            <p>Get in touch with us.</p>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".menu-toggle").addEventListener("click", function() {
+            document.querySelector(".navbar").classList.toggle("active");
+        });
+    </script>
+</body>
+</html>

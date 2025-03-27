@@ -1,0 +1,103 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+
+.head-content{
+    text-align: center;
+    margin-top: 30px;
+}
+.container{
+    padding: 10px;
+}
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    /* margin-top: 50px; */
+    left: 20%;
+}
+
+.slides-container {
+    display: flex;
+    width: 300%;
+    transition: transform 1s ease-in-out;
+}
+.slides-container-2 {
+    display: flex;
+    width: 300%;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.slide img { 
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+
+@keyframes autoSlide {
+    0%, 30% { transform: translateX(0%); }
+    33%, 63% { transform: translateX(-100%); }
+    66%, 96% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); }
+}
+
+
+.slides-container-2 {
+    animation: autoSlide 15s infinite;
+}
+
+#slide1:checked ~ .slides-container { animation: none; transform: translateX(0%); }
+#slide2:checked ~ .slides-container { animation: none; transform: translateX(-100%); }
+#slide3:checked ~ .slides-container { animation: none; transform: translateX(-200%); }
+/* 
+#slide1:checked ~ .slides-container {
+    animation: autoSlide 9s infinite 10s;
+}
+#slide2:checked ~ .slides-container {
+    animation: autoSlide 9s infinite 10s;
+}
+#slide3:checked ~ .slides-container {
+    animation: autoSlide 9s infinite 10s;
+} */
+
+.navigation {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.navigation label {
+    width: 15px;
+    height: 15px;
+    background: #bbb;
+    border-radius: 50%;
+
+    transition: background 0.3s;
+    cursor: pointer;
+}
+
+/* Highlight active dot */
+#slide1:checked ~ .navigation label[for="slide1"],
+#slide2:checked ~ .navigation label[for="slide2"],
+#slide3:checked ~ .navigation label[for="slide3"] {
+    background: #333;
+}
